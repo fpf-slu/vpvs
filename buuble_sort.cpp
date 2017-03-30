@@ -49,8 +49,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 /**
  * Bublinkove razeni
- * @param pole
- * @return 
+ * @param pole Vstupni pole cisel.
+ * @return Pocet cyklu.
  */
 private int bubleSortArray(int *pole) {
     int i=0;
