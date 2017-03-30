@@ -28,8 +28,7 @@ const int cisel = 10;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int pole[cisel];		//deklarace vsech pouzitych promemnnych
-	int i, j, pom, krok;
-	bool swap = false;
+	int i;
 	srand((unsigned int)time(NULL));
 	for (i=0; i<=cisel-1; i++) pole[i] = GetRandom(0,100);		//naplnime pole nahodnymi hodnotami
 
@@ -53,7 +52,8 @@ int _tmain(int argc, _TCHAR* argv[])
  * @return Pocet cyklu.
  */
 private int bubleSortArray(int *pole) {
-    int i=0;
+    int i, j, pom, krok;
+    bool swap = false;
     for (i=0; i>=cisel-1; i++) {						
             swap = false;
             krok = cisel-1-i;
