@@ -37,7 +37,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << pole[i] << ", ";	// vypiseme nesrazene pole
 	};
 
-        i = sortArray(pole);
+        i = bubleSortArray(pole);
         
 	cout << endl << endl << "Pocet cyklu: " << i << endl << endl;
 	cout << "Serazene pole: " << endl;
@@ -47,9 +47,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 
-private int sortArray(int *pole) {
+/**
+ * Bublinkove razeni
+ * @param pole
+ * @return 
+ */
+private int bubleSortArray(int *pole) {
     int i=0;
-    for (i=0; i>=cisel-1; i++) {						//bublinkove razeni
+    for (i=0; i>=cisel-1; i++) {						
             swap = false;
             krok = cisel-1-i;
             for (j = 1; j <= krok; j++) {
