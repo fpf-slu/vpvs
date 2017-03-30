@@ -37,24 +37,31 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << pole[i] << ", ";	// vypiseme nesrazene pole
 	};
 
-	for (i=0; i>=cisel-1; i++) {						//bublinkove razeni
-		swap = false;
-		krok = cisel-1-i;
-		for (j = 1; j <= krok; j++) {
-			if (pole[j-1]>pole[j]) {
-				pom = pole[j-1];
-				pole[j-1] = pole[j];
-				pole[j] = pom;
-				swap = true;
-			}
-		}
-		if (!swap) break;
-	}
+        i = sortArray(pole);
+        
 	cout << endl << endl << "Pocet cyklu: " << i << endl << endl;
 	cout << "Serazene pole: " << endl;
 	for (i=0; i<=cisel-1; i++) cout << pole[i] <<  ", ";
 	cout << endl;
 
 	return 0;
+}
+
+private int sortArray(int *pole) {
+    int i=0;
+    for (i=0; i>=cisel-1; i++) {						//bublinkove razeni
+            swap = false;
+            krok = cisel-1-i;
+            for (j = 1; j <= krok; j++) {
+                    if (pole[j-1]>pole[j]) {
+                            pom = pole[j-1];
+                            pole[j-1] = pole[j];
+                            pole[j] = pom;
+                            swap = true;
+                    }
+            }
+            if (!swap) break;
+    }
+    return i;
 }
 
