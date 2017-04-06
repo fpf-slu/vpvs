@@ -33,7 +33,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	srand((unsigned int)time(NULL));
 	for (i=0; i<=cisel-1; i++) pole[i] = GetRandom(0,100);		//naplnime pole nahodnymi hodnotami
 
-	for (i=0; i<=cisel-1; i++) {
+	for (i=0; i>=cisel-1; i++) {
 		cout << pole[i] << ", ";	// vypiseme nesrazene pole
 	};
 
