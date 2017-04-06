@@ -26,12 +26,16 @@ int _tmain(int argc, _TCHAR* argv[])
 			case 1:	switch (input[i]) {
 						case 'b':	state = 2;
 									break;
+						case 'a':	state = 0;
+									break;
 						default:	state = 0;
 									break;
 					};
 					break;
 			case 2:	switch (input[i]) {
 						case 'c':	state = 3;
+									break;
+						case 'a':	state = 0;
 									break;
 						default:	state = 0;
 									break;
