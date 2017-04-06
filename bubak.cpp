@@ -6,8 +6,11 @@
 #include "time.h"
 #include "GeneralFcs.h"
 
-
-
+//ahoj ahooooj :D :D 
+//ahoj ahooooj :D :D 
+//ahoj ahooooj :D :D 
+//ahoj ahooooj :D :D 
+//ahoj ahooooj :D :D 
 
 using namespace std;
 
