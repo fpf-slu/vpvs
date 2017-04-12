@@ -54,7 +54,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Serazene pole: " << endl;
 	for (i=0; i<=cisel-1; i++) cout << pole[i] <<  ", ";
 	cout << endl;
-
 	return 0;
 }
 
