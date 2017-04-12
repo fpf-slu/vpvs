@@ -24,6 +24,8 @@ int _tmain(int argc, _TCHAR* argv[])
 					};
 					break;
 			case 1:	switch (input[i]) {
+						case 'a':	state = 1;
+									break;
 						case 'b':	state = 2;
 									break;
 						default:	state = 0;
