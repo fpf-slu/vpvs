@@ -37,7 +37,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << pole[i] << ", ";	// vypiseme nesrazene pole
 	};
 
-	for (i=0; i>=cisel-1; i++) {						//bublinkove razeni
+	for (i=0; i<=cisel-1; i++) {						//bublinkove razeni
 		swap = false;
 		krok = cisel-1-i;
 		for (j = 1; j <= krok; j++) {
