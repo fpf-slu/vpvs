@@ -44,6 +44,7 @@ int Dequeue(TQueue* *a_head, TQueue* *a_tail) {
 	TQueue *l_hlp = *a_head; //deklarujeme pomocnou promennou a zaroven ji priradime aktualni celo fronty
 	*a_head = l_hlp->next; //nove celo bude prvek druhy v poradi - naslednik soucasneho cela
 	l_val = l_hlp->value; // vezmeme si hodnotu z puvodniho cela fronty
+	if (*a_head == NULL) {*a_tail = NULL;};
 	delete l_hlp;
 	return l_val;
 };
