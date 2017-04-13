@@ -48,7 +48,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				swap = true;
 			}
 		}
-		if (!swap) break;
+		if (swap) break;
 	}
 	cout << endl << endl << "Pocet cyklu: " << i << endl << endl;
 	cout << "Serazene pole: " << endl;
